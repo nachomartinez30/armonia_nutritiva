@@ -1,0 +1,37 @@
+.customShapeDividerTop1606848837 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.customShapeDividerTop1606848837 svg {
+  position: relative;
+  display: block;
+  width: calc(164% + 1.3px);
+  height: 136px;
+  transform: rotateY(180deg);
+}
+
+.customShapeDividerTop1606848837 .shapeFill {
+  fill: #590a27;
+}
+
+.fadeIn {
+  opacity: 1;
+  animation-name: fadeInOpacity;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 1s;
+}
+
+@keyframes fadeInOpacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

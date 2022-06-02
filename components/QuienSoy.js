@@ -19,7 +19,10 @@ const QuienSoy = () => {
                         </div>
 
                         <div className="flex flex-col items-center text-center justify-center">
-                            <h2 className="mt-4 text-rosa-dark font-bold script-font text-3xl"><p>Nutrióloga</p> Susan Areli Osornio Guzmán</h2>
+                            <h2 className="mt-4 text-rosa-dark font-bold script-font text-3xl">
+                                <p>Nutrióloga</p>
+                                Susan Areli Osornio Guzmán
+                            </h2>
                             <div className="w-12 h-1 bg-rosa uppercase rounded mt-2 mb-4" />
                             <div className="text-cafe-dark text-xl">
                                 <p>Licenciada en Nutrición, </p>

@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import Firma from '../../components/Firma';
 import Layout from '../../components/Layout';
-
+import { formatDate } from '../../helpers/index';
 import styles from '../../styles/Blog.module.css';
 
 const Entrada = ({ data = {} }) => {
@@ -12,6 +12,7 @@ const Entrada = ({ data = {} }) => {
         titulo,
         contenido,
         imagen_principal,
+        published_at
     } = data;
 
     const addingHTMLAtributes = () => {
@@ -56,9 +57,9 @@ const Entrada = ({ data = {} }) => {
                                 lg:float-left lg:w-4/12 lg:ml-56 lg:mr-5
                                 align-center
                                 '
-                        width={600}
-                        height={400}
-                        src={`${process.env.NEXT_PUBLIC_API_URL}${imagen_principal.url}`}
+                        width={850}
+                        height={600}
+                        src={`${imagen_principal.url}`}
                         alt={`post ${titulo}`}
                     />
                 </div>
@@ -79,7 +80,7 @@ const Entrada = ({ data = {} }) => {
                 </div>
 
             </article>
-            <Firma fecha='hoy' />
+            <Firma fecha={formatDate(published_at)} />
         </Layout>
     );
 }

@@ -5,7 +5,7 @@ const Testimonios = ({ data }) => {
             <div className="container px-5 py-24 mx-auto">
                 <h1 className="text-8xl script-font font-bold text-rosa mb-12 text-center">Testimonios</h1>
                 <div className="flex flex-wrap m-4">
-                    {data && data.map(testimonio => <Testimonio data={testimonio} />)}
+                    {data && data.map(testimonio => <Testimonio key={testimonio.nombre} data={testimonio} />)}
                 </div>
             </div>
         </section>

@@ -3,7 +3,7 @@ import { useState } from "react";
 
 const Servicio = ({ data }) => {
     const { titulo, descripcion, icono } = data;
-    const iconoURL = `${process.env.NEXT_PUBLIC_API_URL}${icono.url}`
+    const iconoURL = `${icono.url}`
     const [animacion, setAnimacion] = useState(false)
     const [showDescription, setShowDescription] = useState(false)
 

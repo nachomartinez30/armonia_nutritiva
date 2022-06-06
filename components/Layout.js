@@ -1,5 +1,6 @@
 import Head from "next/head";
 import styles from "../styles/Layout.module.css";
+import Footer from "./Footer";
 
 const Layout = ({ children, page = 'Inicio' }) => {
     return (
@@ -28,6 +29,7 @@ const Layout = ({ children, page = 'Inicio' }) => {
             <div className="">
                 {children}
             </div>
+            <Footer />
         </div>
     );
 }

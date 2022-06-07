@@ -9,6 +9,16 @@
   background-position: center;
   background-attachment: fixed;
 }
+@supports (-webkit-touch-callout: none) {
+  .mBackground-image {
+    background-attachment: scroll;
+  }
+}
+@supports not (-webkit-touch-callout: none) {
+  .mBackground-image {
+    background-attachment: fixed;
+  }
+}
 
 .services_shadows {
   border-radius: 25px;

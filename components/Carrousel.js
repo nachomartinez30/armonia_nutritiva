@@ -29,7 +29,7 @@ const Carrousel = ({ data }) => {
                 slidesPerView={1}
             >                {
                     data.map(articulo => <SwiperSlide>
-                        <Card data={articulo} />
+                        <Card key={articulo.titulo} data={articulo} />
                     </SwiperSlide>
                     )
                 }

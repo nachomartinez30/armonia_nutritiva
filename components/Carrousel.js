@@ -52,7 +52,7 @@ const Card = ({ data }) => {
                         height={900}
                         className="rounded-t-lg"
                         src={imageURL}
-                        alt
+                        alt='Imagen'
                     />
                 </a>
             </Link>

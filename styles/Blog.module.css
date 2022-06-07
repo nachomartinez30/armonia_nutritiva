@@ -1,16 +1,14 @@
-
-
 /* TITULOS */
-.entrada h1 strong {
+.entrada h1 {
   @apply text-6xl;
 }
-.entrada h1 strong {
+.entrada h1 {
   @apply script-font;
 }
-.entrada h1 strong {
+.entrada h1 {
   @apply font-bold;
 }
-.entrada h1 strong {
+.entrada h1 {
   @apply text-tinto;
 }
 /* TTITULO H2 */
@@ -39,6 +37,41 @@
 .entrada strong {
   @apply font-bold;
 }
+/* ITALIC */
+.entrada i strong{
+  @apply script-font;
+}
+.entrada i strong{
+  @apply text-verde;
+}
+.entrada i strong{
+  @apply script-font;
+}
+.entrada i strong{
+  @apply text-4xl;
+}
+.entrada i strong{
+  @apply font-bold;
+}
+/* UNDERLINE */
+.entrada strong u{
+  @apply script-font;
+}
+.entrada strong u{
+  @apply text-amarillo-DEFAUL;
+}
+.entrada strong u{
+  @apply script-font;
+}
+.entrada strong u{
+  @apply text-4xl;
+}
+.entrada strong u{
+  @apply font-bold;
+}
+.entrada strong u{
+  text-decoration: none;
+}
 
 .script-font {
   font-family: 'Script-font';
@@ -48,7 +81,6 @@
 .entrada ul {
   list-style-type: square;
 }
-
 
 .entrada ul {
   @apply font-bold;
